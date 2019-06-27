@@ -1,0 +1,404 @@
+
+body
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+}
+.container
+{
+    max-width: 1024px;
+    max-height: 300px;
+    margin: 0 auto;
+}
+.header
+{
+    background: #2e4a7f;
+    color: white;
+    margin: 0;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header a
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+.menu
+{
+    height: inherit;
+}
+.header ul
+{
+    display: flex;
+    height: inherit;
+}
+.header ul li 
+{
+    height: inherit;
+}
+ol,ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header img
+{
+    height: 40px;
+    padding: 0 1em;
+}
+.hero
+{
+    height: 300px;
+    margin: 0;
+    background: #2e4a7f;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "hero-title hero-image"
+}
+.hero-image
+{
+
+    grid-area: hero-image;
+    width: 100%;
+    max-height: 280px;
+}
+.hero-title
+{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.5px;
+    color: white;
+    margin: 0;
+    padding: 1em;
+    grid-area: hero-title;
+}
+.hero-title strong
+{
+    color: #75a9fc;
+}
+.certificado
+{
+    background: white;
+    height: 300px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logo-hellinger logo-cudec certificado-text1 certificado-text1"
+                        "logo-azul logo-azul certificado-text2 certificado-text2";
+}
+
+.logo-hellinger
+{
+    grid-area: logo-hellinger;
+    max-height: 150px;
+    align-self: center;
+}
+.logo-cudec
+{
+    grid-area: logo-cudec;
+    max-height: 150px;
+    justify-self: center;
+}
+.logo-azul
+{
+    grid-area: logo-azul;
+    max-height: 150px;
+}
+.certificado-text1
+{
+    grid-area: certificado-text1;
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    color: #4d4d4d;
+}
+.certificado-text2
+{
+    grid-area: certificado-text2;
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    color: #4d4d4d;
+}
+.modulos
+{
+    height: 300px;
+    background: #2e4a7f;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "modulos-text1 modulos-image"
+                        "modulos-text2 modulos-image";
+}
+.modulos-text1
+{
+    padding: 0 0.5em;
+    color: white;
+    align-self: center;
+    font-size: 1.5em;
+    margin: 0;
+    grid-area: modulos-text1;
+}
+.modulos-text2
+{
+    padding: 0 0.5em;
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    align-self: center;
+    grid-area: modulos-text2;
+}
+.modulos-image
+{
+    margin: 0;
+    max-width: 512px;
+    grid-area: modulos-image;
+}
+.costos
+{
+    height: 300px;
+    background: white;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "costos-title costos-text1"
+                        "costos-title costos-text2";
+}
+.costos-title
+{
+    color: #4d4d4d;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+    font-size: 6em;
+    grid-area: costos-title;
+}
+.costos-text1
+{
+    color: #4d4d4d;
+    padding: 0 .5em;
+    margin: 0;
+    font-size: 2em;
+    justify-self: center;
+    align-self: center;
+    grid-area: costos-text1;
+}
+.costos-text2
+{
+    color: #4d4d4d;
+    font-size: 2em;
+    margin: 0;
+    padding: 0 .5em;
+    justify-self: center;
+    align-self: center;
+    grid-area: costos-text2;
+}
+.contacto
+{
+    background: #2e4a7f;
+    color: white;
+    height: 330px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "form social"
+                        "form social";
+}
+.social
+{
+    grid-area: social;
+    background-size: 100%;
+    padding: 2em;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.social-link
+{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px; 
+    background-size: 100px 100px;
+}
+.social-link.twitter
+{
+    background-image: url('../img/twitter.svg');
+    /* background-size: 50px 50px; */
+}
+.social-link.facebook
+{
+    background-image: url('../img/facebook.svg');
+    /* background-size: 50px 50px; */
+}
+.form 
+{
+    grid-area: form;
+    text-align: center;
+    background: #2e4a7f;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+.form input 
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbe2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px
+}
+.form p 
+{
+    font-size: 20px;
+    color: #3a3b3f;
+    margin-bottom: 1em;
+}
+.form button 
+{
+    background: white;
+    color: #2e4a7f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    border-bottom: 5px solid white;
+    display: inline-block;
+}
+.footer
+{
+    height: 20px;
+    color: white;
+    background-color: #2e4a7f;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer a 
+{
+    color: white
+}
+@media screen and (max-width: 768px)
+{
+    .container
+    {
+        max-height: 800px;
+    }
+    .header
+    {
+        display: none;
+    }
+    .hero
+    {
+        height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "hero-title"
+                            "hero-image";
+    }
+    .hero-title
+    {
+        font-size: 2em;
+        line-height: 1.5em;
+        letter-spacing: -.5px;
+        color: white;
+    }
+    .certificado
+    {
+        height: 600px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,150px);
+        grid-template-areas: "logo-hellinger logo-cudec" 
+                            "certificado-text1 certificado-text1"
+                            "certificado-text2 certificado-text2"
+                            "logo-azul logo-azul" ;
+    }
+    .certificado-text1
+    {
+        font-size: 1.4em;
+        padding: 0 .5em;
+    }
+    .certificado-text2
+    {
+        font-size: 1.4em;
+        padding: 0 .5em;
+    }
+    .logo-hellinger
+    {
+        max-height: 120px;
+        justify-self: center;
+    }
+    .logo-cudec
+    {
+        max-height: 120px;
+    }
+    .logo-azul
+    {
+        grid-area: logo-azul;
+        max-height: 120px;
+    }
+    .modulos
+    {
+        height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "modulos-image"
+        "modulos-image"
+        "modulos-text1" 
+        "modulos-text2";
+    }
+    .modulos-image
+    {
+        max-height: 300px;
+        max-width: 367px;
+    }
+    .modulos-text1
+    {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .modulos-text2
+    {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .costos
+    {
+        height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas:
+        "costos-title" 
+        "costos-title" 
+        "costos-text1"
+        "costos-text2";
+    }
+    .contacto
+    {
+        height: 660px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "social"
+        "social"
+        "form"
+        "form";
+    }
+    .footer
+    {
+        height: 40px;
+    }
+}
