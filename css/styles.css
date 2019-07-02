@@ -374,8 +374,9 @@ ol,ul
     {
         height: 600px;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(4,150px);
-        grid-template-areas: "logo-cudec logo-hellinger" 
+        grid-template-rows: repeat(5,150px);
+        grid-template-areas: "logo-cudec" 
+                            "logo-hellinger" 
                             "certificado-text2 certificado-text2"
                             "certificado-text1 certificado-text1"
                             "logo-azul logo-azul" ;
@@ -392,7 +393,7 @@ ol,ul
     }
     .logo-hellinger
     {
-        max-width: 180px;
+        max-width: 70%;
         justify-self: center;
     }
     .logo-cudec
