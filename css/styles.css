@@ -74,7 +74,7 @@ ol,ul
 }
 .hero-title
 {
-    font-size: 40px;
+    font-size: 2.2em;
     line-height: 1.5em;
     letter-spacing: -.5px;
     color: white;
@@ -94,10 +94,23 @@ ol,ul
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "logo-hellinger logo-cudec certificado-text1 certificado-text1"
+    grid-template-areas: "logo-cudec logo-hellinger certificado-text1 certificado-text1"
                         "logo-azul logo-azul certificado-text2 certificado-text2";
 }
-
+.certificado-text1
+{
+    grid-area: certificado-text1;
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    color: #4d4d4d;
+}
+.certificado-text2
+{
+    grid-area: certificado-text2;
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    color: #4d4d4d;
+}
 .logo-hellinger
 {
     grid-area: logo-hellinger;
@@ -115,24 +128,58 @@ ol,ul
     grid-area: logo-azul;
     max-height: 150px;
 }
-.certificado-text1
-{
-    grid-area: certificado-text1;
-    padding: 0 0.5em;
-    font-size: 1.5em;
-    color: #4d4d4d;
-}
-.certificado-text2
-{
-    grid-area: certificado-text2;
-    padding: 0 0.5em;
-    font-size: 1.5em;
-    color: #4d4d4d;
-}
-.modulos
+.horarios
 {
     height: 300px;
     background: #2e4a7f;
+    color: white;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "horarios-title horarios-text1"
+    "horarios-title horarios-text2"
+    "horarios-title horarios-text3"
+    "horarios-title horarios-text4";
+}
+.horarios-title
+{
+    grid-area: horarios-title;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+    font-size: 6em;
+}
+.horarios-text1
+{
+    grid-area: horarios-text1;
+}
+.horarios-text2
+{
+    grid-area: horarios-text2;
+}
+.horarios-text3
+{
+    grid-area: horarios-text3;
+}
+.horarios-text4
+{
+    grid-area: horarios-text4;
+}
+.horarios h3
+{
+    padding: 0 .5em;
+    margin: 0;
+    font-size: 2em;
+    justify-self: center;
+    align-self: center;
+}
+
+.modulos
+{
+    height: 300px;
+    background: #fff;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -140,22 +187,20 @@ ol,ul
     grid-template-areas: "modulos-text1 modulos-image"
                         "modulos-text2 modulos-image";
 }
-.modulos-text1
+.modulos h3
 {
     padding: 0 0.5em;
-    color: white;
+    color: #4d4d4d;
     align-self: center;
     font-size: 1.5em;
     margin: 0;
+}
+.modulos-text1
+{
     grid-area: modulos-text1;
 }
 .modulos-text2
 {
-    padding: 0 0.5em;
-    color: white;
-    font-size: 1.5em;
-    margin: 0;
-    align-self: center;
     grid-area: modulos-text2;
 }
 .modulos-image
@@ -167,16 +212,17 @@ ol,ul
 .costos
 {
     height: 300px;
-    background: white;
+    background: #2e4a7f;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-areas: "costos-title costos-text1"
-                        "costos-title costos-text2";
+    grid-template-areas: "costos-title costos-text3"
+                        "costos-title costos-text2"
+                        "costos-title costos-text1";
 }
 .costos-title
 {
-    color: #4d4d4d;
+    color: #fff;
     padding: 0;
     margin: 0;
     justify-self: center;
@@ -184,25 +230,27 @@ ol,ul
     font-size: 6em;
     grid-area: costos-title;
 }
-.costos-text1
+.costos h3
 {
-    color: #4d4d4d;
-    padding: 0 .5em;
-    margin: 0;
+    color: #fff;
     font-size: 2em;
+    margin: 0;
+    padding: .2 .5em;
     justify-self: center;
     align-self: center;
+}
+.costos-text1
+{
     grid-area: costos-text1;
 }
 .costos-text2
 {
-    color: #4d4d4d;
-    font-size: 2em;
-    margin: 0;
-    padding: 0 .5em;
-    justify-self: center;
-    align-self: center;
+    
     grid-area: costos-text2;
+}
+.costos-text3
+{
+    grid-area: costos-text3;
 }
 .contacto
 {
@@ -313,6 +361,7 @@ ol,ul
     {
         font-size: 2em;
         line-height: 1.5em;
+        text-align: center;
         letter-spacing: -.5px;
         color: white;
     }
@@ -321,9 +370,9 @@ ol,ul
         height: 600px;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,150px);
-        grid-template-areas: "logo-hellinger logo-cudec" 
-                            "certificado-text1 certificado-text1"
+        grid-template-areas: "logo-cudec logo-hellinger" 
                             "certificado-text2 certificado-text2"
+                            "certificado-text1 certificado-text1"
                             "logo-azul logo-azul" ;
     }
     .certificado-text1
@@ -338,7 +387,7 @@ ol,ul
     }
     .logo-hellinger
     {
-        max-height: 120px;
+        max-height: 70%;
         justify-self: center;
     }
     .logo-cudec
@@ -349,6 +398,29 @@ ol,ul
     {
         grid-area: logo-azul;
         max-height: 120px;
+    }
+    .horarios
+    {
+        height: 600px;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "horarios-title" 
+        "horarios-title" 
+        "horarios-title" 
+        "horarios-title" 
+        "horarios-text1"
+        "horarios-text2"
+        "horarios-text3"
+        "horarios-text4"
+    }
+    .horarios-title
+    {
+        font-size: 4.8em;
+    }
+    .horarios h3
+    {
+        font-size: 1.5em;
     }
     .modulos
     {
@@ -364,7 +436,7 @@ ol,ul
     .modulos-image
     {
         max-height: 300px;
-        max-width: 367px;
+        max-width: 100%;
     }
     .modulos-text1
     {
@@ -380,18 +452,24 @@ ol,ul
     {
         height: 600px;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: repeat(5,1fr);
         grid-template-areas:
         "costos-title" 
         "costos-title" 
+        "costos-text3" 
         "costos-text1"
         "costos-text2";
+    }
+    .costos h3
+    {
+        padding: 0 .5em;
     }
     .contacto
     {
         height: 660px;
         grid-template-columns: 1fr;
         grid-template-areas:
+        "social"
         "social"
         "social"
         "form"
