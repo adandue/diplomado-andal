@@ -425,7 +425,7 @@ ol,ul
         "horarios-text1"
         "horarios-text2"
         "horarios-text3"
-        "horarios-text4"
+        "horarios-text4";
     }
     .horarios-title
     {
@@ -476,6 +476,7 @@ ol,ul
     .costos h3
     {
         padding: 0 .5em;
+        text-align: center;
     }
     .contacto
     {
