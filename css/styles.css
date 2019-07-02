@@ -373,37 +373,44 @@ ol,ul
     .certificado
     {
         height: 600px;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(5,120px);
-        grid-template-areas: "logo-cudec logo-cudec" 
-                            "logo-hellinger logo- hellinger" 
-                            "certificado-text2 certificado-text2"
-                            "certificado-text1 certificado-text1"
-                            "logo-azul logo-azul" ;
+        grid-template-areas: 
+        "logo-cudec" 
+        "certificado-text2"
+        "logo-hellinger" 
+        "certificado-text1"
+        "logo-azul";
+    }
+    .certificado h3
+    {
+        text-align: center;
     }
     .certificado-text1
     {
-        font-size: 1.4em;
+        font-size: 1.1em;
         padding: 0 .5em;
     }
     .certificado-text2
     {
-        font-size: 1.4em;
+        font-size: 1.1em;
         padding: 0 .5em;
     }
     .logo-hellinger
     {
         max-width: 70%;
+        max-height: 100px;
         justify-self: center;
     }
     .logo-cudec
     {
-        max-height: 120px;
+        max-height: 100px;
     }
     .logo-azul
     {
         grid-area: logo-azul;
-        max-height: 120px;
+        max-height: 90px;
+        padding: 10px 0;
     }
     .horarios
     {
