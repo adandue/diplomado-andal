@@ -374,9 +374,9 @@ ol,ul
     {
         height: 600px;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(5,150px);
-        grid-template-areas: "logo-cudec" 
-                            "logo-hellinger" 
+        grid-template-rows: repeat(5,120px);
+        grid-template-areas: "logo-cudec logo-cudec" 
+                            "logo-hellinger logo- hellinger" 
                             "certificado-text2 certificado-text2"
                             "certificado-text1 certificado-text1"
                             "logo-azul logo-azul" ;
