@@ -480,7 +480,7 @@ ol,ul
     }
     .contacto
     {
-        height: 660px;
+        height: 700px;
         grid-template-columns: 1fr;
         grid-template-areas:
         "social"
