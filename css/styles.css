@@ -290,6 +290,10 @@ ol,ul
     background-image: url('../img/facebook.svg');
     /* background-size: 50px 50px; */
 }
+.social-link.whatsapp
+{
+    background-image: url('../img/whatsapp.svg');
+}
 .form 
 {
     grid-area: form;
