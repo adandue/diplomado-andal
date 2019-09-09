@@ -36,17 +36,17 @@
         </div>
     <div class="container">
         <section class="hero">
-            <h1 class="hero-title">El <strong>único diplomado</strong> en Puebla <strong>avalado</strong> por la Universidad<strong> CUDEC</strong>  y por la <strong>Heliinger® Sciencia</strong></h1>
-            <img src="img/hero-image.png" alt="" class="hero-image">
+            <h1 class="hero-title fade-in-element">El <strong>único diplomado</strong> en Puebla <strong>avalado</strong> por la Universidad<strong> CUDEC</strong>  y por la <strong>Heliinger® Sciencia</strong></h1>
+            <img src="img/hero-image.png" alt="" class="hero-image fade-in-element">
         </section>
     </div>
     <div class="container">
         <section class="certificado" id="certificado">
-            <img src="img/logo-cudec.png" alt="" class="logo-cudec">
-            <img src="img/logo-hellinger.svg" alt="" class="logo-hellinger">
-            <img src="img/logo-azul.svg" alt="" class="logo-azul">
-            <h3 class="certificado-text1">La Hellinger® Sciencia fue fundada por Bert Hellinger, creador de las Constelaciones Familiares</h3>
-            <h3 class="certificado-text2">La Universidad CUDEC es la institución más importante en América Latina respecto a las Constelaciones Familiares</h3>
+            <img src="img/logo-cudec.png" alt="" class="logo-cudec fade-in-element hidden">
+            <img src="img/logo-hellinger.svg" alt="" class="logo-hellinger fade-in-element hidden">
+            <img src="img/logo-azul.svg" alt="" class="logo-azul fade-in-element hidden">
+            <h3 class="certificado-text1 fade-in-element hidden">La Hellinger® Sciencia fue fundada por Bert Hellinger, creador de las Constelaciones Familiares</h3>
+            <h3 class="certificado-text2 fade-in-element hidden">La Universidad CUDEC es la institución más importante en América Latina respecto a las Constelaciones Familiares</h3>
         </section>
     </div>
     <div class="container">
@@ -86,7 +86,7 @@
                     
                     <h3>Prepárate para ser un Constelador Familiar Profesional, emprender un camino hacia tu crecimiento personal y sintonizarte en el bienestar</h3>
                     <h1>Contáctanos ahora</h1>
-                    <a href="https://wa.me/5212221107920?text=Hola%20quiero%20informes%20" class="social-link whatsapp"></a>
+                    <a href="https://wa.me/5212221107920?text=Hola%20quiero%20informes%20" class="social-link whatsapp bell"></a>
                     <a href="https://www.facebook.com/cfandal/" class="social-link facebook"></a>
                     <a href="https://twitter.com/ConstelacionesA" class="social-link twitter"></a>
                     <h2>2221 10 7920</h2>
@@ -108,6 +108,35 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-79112482-4');
+</script>
+<script>
+    function() {
+  var elements;
+  var windowHeight;
+
+  function init() {
+    elements = document.querySelectorAll('.hidden');
+    windowHeight = window.innerHeight;
+  }
+
+  function checkPosition() {
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var positionFromTop = elements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0) {
+        element.classList.add('fade-in-element');
+        element.classList.remove('hidden');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+
+  init();
+  checkPosition();
+};
 </script>
 </body>
 </html>
