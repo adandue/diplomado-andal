@@ -94,8 +94,8 @@ ol,ul
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "logo-cudec logo-hellinger certificado-text1 certificado-text1"
-                        "logo-azul logo-azul certificado-text2 certificado-text2";
+    grid-template-areas: "logo-cudec logo-hellinger certificado-text2 certificado-text2"
+                        "logo-azul logo-azul certificado-text1 certificado-text1";
 }
 .certificado-text1
 {
@@ -260,8 +260,7 @@ ol,ul
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-areas: "form social"
-                        "form social";
+    grid-template-areas: "social social";
 }
 .social
 {
