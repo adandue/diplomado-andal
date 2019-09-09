@@ -131,8 +131,8 @@ ol,ul
 .horarios
 {
     height: 300px;
-    background: #2e4a7f;
-    color: white;
+    background: white;
+    color: #4d4d4d;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -179,7 +179,7 @@ ol,ul
 .modulos
 {
     height: 300px;
-    background: #fff;
+    background: #2e4a7f;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -190,7 +190,7 @@ ol,ul
 .modulos h3
 {
     padding: 0 0.5em;
-    color: #4d4d4d;
+    color: #fff;
     align-self: center;
     font-size: 1.5em;
     margin: 0;
