@@ -116,17 +116,20 @@ ol,ul
     grid-area: logo-hellinger;
     max-height: 150px;
     align-self: center;
+    animation: bounceIn 2s;
 }
 .logo-cudec
 {
     grid-area: logo-cudec;
     max-height: 150px;
     justify-self: center;
+    animation: bounceIn 2s;
 }
 .logo-azul
 {
     grid-area: logo-azul;
     max-height: 150px;
+    animation: bounceIn 2s;
 }
 .horarios
 {
@@ -293,6 +296,9 @@ ol,ul
 .social-link.whatsapp
 {
     background-image: url('../img/whatsapp.svg');
+    animation-name: bell;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 .form 
 {
@@ -344,6 +350,55 @@ ol,ul
 {
     color: white
 }
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes bell
+  {
+      0%
+      {
+          transform: rotate(35deg);
+      }
+      12.5%
+      {
+          transform: rotate(-30deg);
+      }
+      25%
+      {
+          transform: rotate(25deg);
+      }
+      37.5%
+      {
+          transform: rotate(-20deg);
+      }
+      50%
+      {   
+          transform: rotate(15deg);
+      }
+      62.5%
+      {
+          transform: rotate(-10deg);
+      }
+      75%
+      {
+          transform: rotate(5deg);
+      }
+      100%
+      {
+          transform: rotate(0deg);
+      }
+  }
 @media screen and (max-width: 768px)
 {
     body
