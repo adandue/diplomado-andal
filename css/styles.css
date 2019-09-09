@@ -215,10 +215,11 @@ ol,ul
     background: #2e4a7f;
     margin: 0;
     display: grid;
+    text-align: center;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: "costos-title costos-text3"
-                        "costos-title costos-text2"
-                        "costos-title costos-text1";
+                        "costos-title costos-text1"
+                        "costos-title costos-text2";
 }
 .costos-title
 {
